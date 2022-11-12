@@ -79,6 +79,11 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
       </li>
     </ul>
   </nav>
+  <button class="btn-menu deactive">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </header>
 <?=$body?>
 <!-- Footer -->
@@ -172,7 +177,16 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
 
 <script src="<?=RESOURCE?>/js/library/WOW/dist/wow.min.js"></script>
 <script>
+  // Enable WOW JS
   new WOW().init();
+
+  const menuButton = document.querySelector('header button.btn-menu');
+  const navMenu    = document.querySelector('header nav.menu ul.menu-items');
+  menuButton.onclick = (e) => {
+    menuButton.classList.toggle('active');
+    menuButton.classList.toggle('deactive');
+    navMenu.classList.toggle('active');
+  }
 </script>
 </body>
 </html>

@@ -141,6 +141,44 @@ header nav.menu ul.dropdown-menu li.dropdown-item:hover a {
   color: #ffffff;
 }
 
+header button.btn-menu {
+  display: none;
+  visibility: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header button.btn-menu span {
+  background-color: var(--secondary-blue);
+  display: block;
+  border-radius: 3px;
+  height: 1.5pt;
+  margin: 3px 0;
+  transition: .3s;
+}
+
+header button.btn-menu.deactive span {
+  width: 100%;
+}
+
+header button.btn-menu.active span {
+  width: 70%;
+}
+
+header button.btn-menu.deactive span:nth-child(2) {
+  width: 70%;
+}
+
+header button.btn-menu.active span:nth-child(2) {
+  width: 100%;
+}
+
 footer {
   background-color: var(--secondary-lightblue);
 }
@@ -244,4 +282,44 @@ footer .copyright {
 footer .copy-icon {
   font-size: 14px;
   margin-right: 5px;
+}
+
+
+@media screen and (max-width: 780px) {
+  header button.btn-menu {
+    display: flex;
+    visibility: visible;
+  }
+
+  header nav.menu {
+    font-size: 16px;
+  }
+
+  header nav.menu ul.menu-items {
+    background-color: var(--primary-white);
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: .3s;
+  }
+  
+  header nav.menu ul.menu-items.active {
+    transform: scaleY(1);
+  }
+  
+  header nav.menu li.dropdown ul.dropdown-menu.projects-menu {
+    position: static;
+    width: 100%;
+    transform: scaleY(1);
+    opacity: 1;
+    box-shadow: #0000001e 0px 0px 12px inset;
+    border-radius: 5px;
+    list-style: none;
+  }
 }

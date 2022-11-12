@@ -71,7 +71,7 @@ $body       = '
       </div>
     </div>
   </section>
-  <section class="container keterampilan wow fadeInUp" id=keterampilan>
+  <section class="container keterampilan wow fadeInUp" data-wow-delay=.3s id=keterampilan>
     <div class=content>
       <div class=content-title>
         <h2 class=keterampilan-title>'.$keterampilanData['task_name'].'</h2>
