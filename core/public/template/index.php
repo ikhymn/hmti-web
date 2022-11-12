@@ -31,21 +31,21 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
 <body>
   <!-- Header -->
 <header>
-  <span class=logo>
+  <span class="logo wow bounceIn" data-wow-delay=".3s">
     <img src=<?=RESOURCE?>/img/hmti_logo.png alt=hmti_logo>
   </span>
   <nav class=menu>
     <ul class=menu-items>
-      <li class="menu-item">
+      <li class="menu-item wow fadeInRight" data-wow-delay=".1s">
         <a href=<?=BASE_URL?>/# class="<?= $activePage=='home'? 'active' : '' ?> home-menu">Home</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item wow fadeInRight" data-wow-delay=".2s">
         <a href=<?=BASE_URL?>/#profil class="<?= $activePage=='profil'? 'active' : '' ?> profil-menu">Profil</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item wow fadeInRight" data-wow-delay=".3s">
         <a href=<?=BASE_URL?>/berita class="<?= $activePage=='berita'? 'active' : '' ?> berita-menu">Berita</a>
       </li>
-      <li class="menu-item dropdown">
+      <li class="menu-item dropdown wow fadeInRight" data-wow-delay=".4s">
         <a class="projects-menu dropdown-trigger" href="<?=BASE_URL?>/projects"> Projects <i class="hf caret-down"></i> </a>
         <ul class="dropdown-menu projects-menu">
           <li class="dropdown-item ai-project">
@@ -74,7 +74,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
           </li>
         </ul>
       </li>
-      <li class="menu-item">
+      <li class="menu-item wow fadeInRight" data-wow-delay=".5s">
         <a href=<?=BASE_URL?>/arsip class="<?= $activePage=='arsip'? 'active' : '' ?> arsip-menu">Arsip</a>
       </li>
     </ul>
