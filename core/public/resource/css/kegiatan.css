@@ -1,0 +1,139 @@
+section.hmti-event * {
+  color: #ffffff;
+}
+
+section#skill-class {
+  margin-top: 60px;
+}
+
+section.hmti-event {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.hmti-event .hero-background {
+  position: absolute;
+  z-index: -1;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+section.hmti-event .hero-background img {
+  height: 100%;
+}
+
+section.hmti-event .section-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;height: 100%;
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+section.hmti-event .section-overlay h1.section-title {
+  font-size: 36px;
+  display: inline;
+  position: relative;
+}
+
+section.hmti-event .section-overlay h1.section-title::before {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 100%;
+  animation: title-overlay .5s cubic-bezier(0.93,-0.01, 0.27, 1) forwards;
+  animation-delay: .3s;
+}
+
+section.hmti-event .section-overlay p.section-text {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+section.hmti-event .section-overlay a.section-cta {
+  text-decoration: none;
+}
+
+section.hmti-event .section-overlay button.cta-btn {
+  color: var(--green-skillclass);
+  padding: 8px 18px;
+  font-weight: 500;
+  margin-top: 30px;
+  border: 1px solid var(--green-skillclass);
+  transition: .3s;
+}
+
+section.hmti-event .section-overlay button.cta-btn:hover {
+  box-shadow: #ffffff -4px 4px 0;
+  transform: translate(4px, -4px);
+}
+
+section.hmti-event .section-overlay .events-image {
+  overflow: hidden;
+  background-color: var(--primary-white);
+  padding: 5px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+section.hmti-event .section-overlay .events-image img {
+  width: 100%;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+section.hmti-event .section-overlay .events-image:hover img {
+  transform: scale(1.1);
+}
+
+section#skill-class .section-overlay {
+  background-image: linear-gradient(to bottom, #c5bc0cd0, #148549d0);
+}
+
+section#skill-class .section-overlay button.cta-btn {
+  color: var(--green-skillclass);
+  border-color: var(--green-skillclass);
+}
+
+section#hmti-fun .section-overlay {
+  background-image: linear-gradient(to bottom, #148549d0, #108EAAd0);
+}
+
+section#hmti-fun .section-overlay button.cta-btn {
+  color: var(--lightblue-hmtifun);
+  border-color: var(--lightblue-hmtifun);
+}
+
+section#march-event .section-overlay {
+  background-image: linear-gradient(to bottom, #108EAAd0, #1310AAd0);
+}
+
+section#march-event .section-overlay button.cta-btn {
+  color: var(--blue-marchevent);
+  border-color: var(--blue-marchevent);
+}
+
+section#it-expo .section-overlay {
+  background-image: linear-gradient(to bottom, #1310AAd0, #9E10AAd0);
+}
+
+section#it-expo .section-overlay button.cta-btn {
+  color: var(--purple-itexpo);
+  border-color: var(--purple-itexpo);
+}
+
+@keyframes title-overlay {
+  from {
+    right: 0;
+  } to {
+    right: 100%;
+  }
+}

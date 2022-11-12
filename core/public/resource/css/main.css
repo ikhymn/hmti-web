@@ -1,0 +1,247 @@
+:root {
+  --primary-white: #ffffff;
+  --secondary-blue: #3F79E9;
+  --secondary-lightblue: #F0F5FD;
+  --ternary-grey: #485E88;
+
+  --yellow-skillclass: #c5bc0c;
+  --green-skillclass: #148549;
+  --lightblue-hmtifun: #108EAA;
+  --blue-marchevent: #1310AA;
+  --purple-itexpo: #9E10AA; 
+}
+
+* {
+  font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--primary-white);
+  position: fixed;
+  z-index: 666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 100px;
+}
+
+header span.logo img {
+  height: 50px;
+}
+
+header nav.menu {
+  font-size: 14px;
+}
+
+header nav.menu ul.menu-items {
+  display: flex;
+  list-style: none;
+}
+
+header nav.menu ul.menu-items li.menu-item > a,
+header nav.menu ul.menu-items li.menu-item > span {
+  position: relative;
+  padding: 0 15px;
+  line-height: 50px;
+  text-decoration: none;
+  color: var(--secondary-blue);
+  cursor: default;
+}
+
+header nav.menu ul.menu-items li.menu-item > a {
+  display: inline-block;
+  height: 50px;
+}
+
+header nav.menu ul.menu-items li.menu-item > a::after {
+  content: "";
+  background-color: var(--secondary-blue);
+  position: absolute;
+  top: 100%; left: 50%;
+  transform-origin: center;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 0;
+  transition: .3s;
+}
+
+header nav.menu ul.menu-items li.menu-item > a:hover::after,
+header nav.menu ul.menu-items li.menu-item > a.active::after {
+  width: 50%;
+}
+
+header nav.menu li.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+header nav.menu li.dropdown ul.dropdown-menu {
+  background-color: var(--primary-white);
+  position: absolute;
+  top: 100%; right: 0;
+  width: 250px;
+  padding: 20px;
+  box-shadow: #0000001e 0px 4px 12px;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: .3s;
+}
+
+header nav.menu li.dropdown ul.dropdown-menu.kegiatan-menu {
+  width: 200px;
+}
+
+header nav.menu li.dropdown ul.dropdown-menu.projects-menu {
+  width: 300px;
+}
+
+header nav.menu li.dropdown:hover ul.dropdown-menu {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+header nav.menu li.dropdown span i {
+  transform-origin: center;
+  transition: .3s;
+}
+
+header nav.menu li.dropdown:hover span i {
+  transform: rotateX(-180deg)
+}
+
+header nav.menu ul.dropdown-menu li.dropdown-item a {
+  color: var(--secondary-blue);
+  line-height: 28px;
+  text-decoration: none;
+}
+
+header nav.menu ul.dropdown-menu li.dropdown-item {
+  background-color: #ffffff;
+  color: var(--secondary-blue);
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+header nav.menu ul.dropdown-menu li.dropdown-item:hover {
+  background-color: var(--secondary-blue);
+}
+
+header nav.menu ul.dropdown-menu li.dropdown-item:hover a {
+  color: #ffffff;
+}
+
+footer {
+  background-color: var(--secondary-lightblue);
+}
+
+footer * {
+  color: var(--ternary-grey);
+}
+
+footer section.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  padding: 100px;
+  padding-bottom: 0;
+}
+
+
+footer section.about .profil .information,
+footer section.about .terkait .item {
+  font-size: 12px;
+}
+
+footer section.about .profil h4 {
+  font-weight: 600;
+}
+
+footer section.about .card-title {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+footer sectoin.about .card-body {
+  font-size: 13px;
+}
+
+footer section.about .card-body p {
+  margin: 20px 0;
+}
+
+footer section.about .terkait .item strong {
+  display: block;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+footer section.about .medsos .items {
+  display: flex;
+  align-items: center;
+}
+
+footer section.about .medsos .item {
+  background-color: var(--primary-white);
+  display: block;
+  font-size: 36px;
+  width: 60px;
+  height: 55px;
+  line-height: 33px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+footer .medsos .item a {
+  text-decoration: none;
+  transform-origin: center;
+}
+
+footer .medsos .item:hover a {
+  font-size: 42px;
+}
+
+footer .medsos .item i {
+  color: var(--secondary-blue);
+}
+
+footer .poweredby {
+  padding: 50px 100px;
+}
+
+footer .poweredby h5 {
+  font-weight: 500;
+}
+
+footer .poweredby .powered-items ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+}
+
+footer .poweredby .powered-item img {
+  height: 50px;
+}
+
+footer .copyright {
+  padding: 0 100px;
+  font-size: 12px;
+}
+
+footer .copy-icon {
+  font-size: 14px;
+  margin-right: 5px;
+}

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "hmti-fonticon";
+  src: url("./hmti_fonticon.ttf");
+}
+
+i.hf {
+  display: inline-block;
+  font: normal normal normal 14px/1 hmti-fonticon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+i.hf.time-icon:before {
+  font-family: hmti-fonticon;
+  content: ".";
+}
+
+i.hf.date-icon:before {
+  font-family: hmti-fonticon;
+  content: ":";
+}
+
+i.hf.ai-icon:before {
+  font-family: hmti-fonticon;
+  content: "A";
+}
+
+i.hf.gis-icon:before {
+  font-family: hmti-fonticon;
+  content: "G";
+}
+
+i.hf.iot-icon:before {
+  font-family: hmti-fonticon;
+  content: "I";
+}
+
+i.hf.mobile-dev-icon:before {
+  font-family: hmti-fonticon;
+  content: "M";
+}
+
+i.hf.network-icon:before {
+  font-family: hmti-fonticon;
+  content: "N";
+}
+
+i.hf.troubleshoot-icon:before {
+  font-family: hmti-fonticon;
+  content: "T";
+}
+
+i.hf.web-icon:before {
+  font-family: hmti-fonticon;
+  content: "W";
+}
+
+i.hf.facebook-icon:before {
+  font-family: hmti-fonticon;
+  content: "f";
+}
+
+i.hf.instagram-icon:before {
+  font-family: hmti-fonticon;
+  content: "i";
+}
+
+i.hf.twitter-icon:before {
+  font-family: hmti-fonticon;
+  content: "t";
+}
+
+i.hf.caret-down:before {
+  font-family: hmti-fonticon;
+  content: "v";
+}

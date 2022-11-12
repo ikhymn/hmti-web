@@ -1,0 +1,265 @@
+section.container {
+  padding: 100px;
+}
+
+section.home {
+  position:relative;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.home .hero .hero-background img {
+  width: 100%;
+}
+
+section.home .hero .hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #446e95d2;
+}
+
+section.home .hero .home-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content .content-logo img {
+  width: 150px;
+}
+
+.home-content .content-text {
+  margin: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home-content .welcome-text h1,
+.home-content .welcome-text h2 {
+  /* position: absolute; */
+  line-height: 35px;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  animation: welcomeAnimation 1.3s ease-in-out forwards;
+}
+
+.home-content .welcome-text.dua h1 {
+  animation-delay: .2s;
+}
+
+.home-content .welcome-text.tiga h1 {
+  animation-delay: .4s;
+}
+
+.home-content .content-text h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.home-content .content-cta button.cta-btn {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: var(--secondary-blue);
+  padding: 8px 21px;
+  border: 1px solid var(--secondary-blue);
+  border-radius: 1px;
+  box-shadow: #ffffff 0 0 0 0;
+  transition: .3s;
+}
+
+.home-content .content-cta button.cta-btn:hover {
+  box-shadow: #ffffff -4px 4px 0 0;
+  transform: translate(4px, -4px);
+}
+
+
+section.container .content-title h2 {
+  display: inline;
+  position: relative;
+  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+section.container .content-title h2::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 100%;
+}
+
+section.container p {
+  color: var(--ternary-grey);
+}
+
+section .content-title h2::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  top: 0; left: 100%;
+  width: 15px;
+  height: 100%;
+  opacity: 0;
+  animation: cursorblinking 1s linear infinite;
+  animation-delay: 2.3s;
+}
+
+section.profil-singkat {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
+}
+
+section.profil-singkat .content-title h2::before {
+  background-color: var(--primary-white);
+  animation: textwriting1 2s steps(19) forwards;
+}
+
+section.profil-singkat .content p {
+  text-align: justify;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+section.profil-singkat .content p::first-letter {
+  padding-left: 25px;
+}
+
+section.profil-singkat aside.content-img {
+  margin-top: 60px;
+}
+
+section.struktur-organisasi {
+  background-color: var(--secondary-lightblue);
+}
+
+section.struktur-organisasi .content-title h2::before {
+  background-color: var(--secondary-lightblue);
+  animation: textwriting1 2s steps(19) forwards;
+}
+
+section.keterampilan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.keterampilan .content-title,
+section.keterampilan .content-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.keterampilan .content-title h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.keterampilan .content-title h2::before {
+  background-color: var(--primary-white);
+  animation: textwriting1 2s steps(12) forwards;
+}
+
+section.keterampilan .content-title h2::after {
+  top: auto;
+  height: 35px;
+}
+
+section.keterampilan p {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+section.keterampilan .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 14px 50px;
+}
+
+section.keterampilan .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 12px;
+  box-shadow: #0000001e 0 4px 12px, 
+            #0000001e 0 -2px 4px inset;
+  transition: .3s;
+}
+
+section.keterampilan .card .card-text {
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: default;
+  transition: .3s;
+}
+
+section.keterampilan .card:hover .card-img svg path {
+  fill: var(--primary-white);
+}
+
+section.keterampilan .card:hover .card-text {
+  color: var(--primary-white);
+}
+
+section.keterampilan .card:hover {
+  background-color: var(--secondary-blue);
+  transform: translateY(-4px);
+  box-shadow: #0000002e 0 12px 16px, 
+            #0000001e 0 -2px 4px inset;
+}
+
+@keyframes welcomeAnimation {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textwriting1 {
+  from {
+    left: 0;
+  } to {
+    left: 100%;
+  }
+}
+
+@keyframes cursorblinking {
+  0% {
+    opacity: 1;
+  } 50% {
+    opacity: 1;
+  } 100% {
+    opacity: 0;
+  }
+}
