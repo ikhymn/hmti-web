@@ -21,6 +21,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
   <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
   <link href=https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap rel=stylesheet>
 
+  <link rel=stylesheet href=<?=RESOURCE?>/js/library/WOW/css/libs/animate.css>
   <link rel=stylesheet href=<?=RESOURCE?>/fonts/hmti-fonticons.css>
   <link rel=stylesheet href=<?=RESOURCE?>/css/main.css>
   <?php echo isset($CustomCSS) ? $CustomCSS : '' ?>
@@ -45,48 +46,31 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
         <a href=<?=BASE_URL?>/berita class="<?= $activePage=='berita'? 'active' : '' ?> berita-menu">Berita</a>
       </li>
       <li class="menu-item dropdown">
-        <span class="kegiatan-menu dropdown-trigger"> Kegiatan <i class="hf caret-down"></i> </span>
-        <ul class="dropdown-menu kegiatan-menu">
-          <li class="dropdown-item skill-class">
-            <a href=<?=BASE_URL?>/kegiatan#skill-class>HMTI Skill Class</a>
-          </li>
-          <li class="dropdown-item hmti-fun">
-            <a href=<?=BASE_URL?>/kegiatan#hmti-fun>HMTI Fun</a>
-          </li>
-          <li class="dropdown-item march-event">
-            <a href=<?=BASE_URL?>/kegiatan#march-event>March Event</a>
-          </li>
-          <li class="dropdown-item it-expo">
-            <a href=<?=BASE_URL?>/kegiatan#it-expo>IT Expo</a>
-          </li>
-        </ul>
-      </li>
-      <li class="menu-item dropdown">
-        <span class="projects-menu dropdown-trigger"> Projects <i class="hf caret-down"></i> </span>
+        <a class="projects-menu dropdown-trigger" href="<?=BASE_URL?>/projects"> Projects <i class="hf caret-down"></i> </a>
         <ul class="dropdown-menu projects-menu">
           <li class="dropdown-item ai-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Artificial Intelligence</a>
+            <a href=<?=BASE_URL?>/projects#ai>Artificial Intelligence</a>
           </li>
           <li class="dropdown-item iot-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Internet of Things</a>
+            <a href=<?=BASE_URL?>/projects#iot>Internet of Things</a>
           </li>
           <li class="dropdown-item gis-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Geographic Information System</a>
+            <a href=<?=BASE_URL?>/projects#gis>Geographic Information System</a>
           </li>
           <li class="dropdown-item troubleshooting-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Troubleshooting</a>
+            <a href=<?=BASE_URL?>/projects#troubleshoot>Troubleshooting</a>
           </li>
           <li class="dropdown-item mobile-dev-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Mobile App Development</a>
+            <a href=<?=BASE_URL?>/projects#mobile>Mobile App Development</a>
           </li>
           <li class="dropdown-item networking-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Network Engineering</a>
+            <a href=<?=BASE_URL?>/projects#keterampilan>Network Engineering</a>
           </li>
           <li class="dropdown-item web-dev-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Web Development</a>
+            <a href=<?=BASE_URL?>/projects#web>Web Development</a>
           </li>
           <li class="dropdown-item game-dev-project">
-            <a href=<?=BASE_URL?>/#keterampilan>Game Development</a>
+            <a href=<?=BASE_URL?>/projects#game>Game Development</a>
           </li>
         </ul>
       </li>
@@ -98,7 +82,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
 </header>
 <?=$body?>
 <!-- Footer -->
-<footer>
+<footer class="wow fadeInUp" data-wow-delay="0.3s">
   <section class="about cards">
     <div class="profil card">
       <div class="logo">
@@ -185,5 +169,10 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
     <span class=copy-icon>&copy;</span><span class=copy-text>2022 Himpunan Mahasiswa Teknik Informatika Universitas Khairun. All Right Reserved. Hak Cipta HMTI Unkhair.</span>
   </span>
 </footer>
+
+<script src="<?=RESOURCE?>/js/library/WOW/dist/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 </body>
 </html>

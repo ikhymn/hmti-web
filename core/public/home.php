@@ -45,7 +45,7 @@ $body       = '
       </div>
     </div> 
   </section>
-  <section class="container profil-singkat" id=profil>
+  <section class="container profil-singkat wow fadeInUp" data-wow-duration=1s data-wow-delay=.3s id=profil>
     <div class=content>
       <div class=content-title>
         <h2 class=profile-title>'.$profilData['task_name'].'</h2>
@@ -58,7 +58,7 @@ $body       = '
       <img width="300" src='.RESOURCE.'/img/hmti_logo.png alt=hmti_logo loading=lazy>
     </aside>
   </section>
-  <section class="container struktur-organisasi">
+  <section class="container struktur-organisasi wow fadeInLeft" data-wow-delay=".3s">
     <div class=content>
       <div class=content-title>
         <h2 class=title>'.$strukturData['task_name'].'</h2>
@@ -71,7 +71,7 @@ $body       = '
       </div>
     </div>
   </section>
-  <section class="container keterampilan" id=keterampilan>
+  <section class="container keterampilan wow fadeInUp" id=keterampilan>
     <div class=content>
       <div class=content-title>
         <h2 class=keterampilan-title>'.$keterampilanData['task_name'].'</h2>
