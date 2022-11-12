@@ -46,7 +46,7 @@ section.top-news h1.headline::after {
 section.top-news .news-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-rows: 60vh;
   gap: 20px;
 }
 
@@ -80,7 +80,7 @@ section.top-news .newest:hover .img-thumbnail img {
 section.top-news .newest .news-content {
   position: absolute;
   background-color: var(--primary-white);
-  bottom: -35%; left: 0;
+  bottom: -100%; left: 0;
   width: 100%;
   padding: 20px;
   color: var(--ternary-grey);

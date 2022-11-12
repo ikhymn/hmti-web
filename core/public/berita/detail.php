@@ -6,8 +6,6 @@ $flyingID = $data[0];
 $prgrz    = new ProgrezAPI(PROGREZ_USERKEY);
 $news     = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $flyingID, 'task_name,description,files,datetime_done');
 
-var_dump($news);die();
-
 $titleblog = $news['task_name'];
 $img       = $news['files'][0]['link'];
 $datetime  = $news['datetime_done'];
