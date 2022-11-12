@@ -263,3 +263,40 @@ section.keterampilan .card:hover {
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 900px) {
+  section.keterampilan .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  header,
+  section.container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  section.profil-singkat {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    row-gap: 20px;
+    align-items: center;
+  }
+
+  
+  section.struktur-organisasi .content-body img {
+    width: 90%;
+  }
+
+  section.keterampilan .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.keterampilan .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
