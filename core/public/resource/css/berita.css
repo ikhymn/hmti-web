@@ -292,3 +292,40 @@ section#news nav.pagination ul li:hover a {
   background-color: var(--ternary-grey);
   color: var(--primary-white);
 }
+
+@media screen and (max-width: 900px) {
+  section.top-news .hero .hero-overlay,
+  section.container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  section.top-news .hero .hero-background img {
+    width: auto;
+    height: 100%;
+  }
+
+  section#news .cards {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  section.top-news {
+    height: 100%;
+  }
+
+  section.top-news .hero .news-container {
+    grid-template-columns: 1fr;
+  }
+
+  section#news .news-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section#news .news-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

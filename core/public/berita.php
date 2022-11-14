@@ -23,7 +23,7 @@ for ($i=0;$i<count($news);$i++) {
   $datetime  = $news[$i]['datetime_done'];
 
   $el = ' 
-    <div class="card news-item">
+    <div class="card news-item wow fadeInUp" data-wow-delay=0.'.(count($news)-$i).'s data-wow-duration=1s>
       <div class="card-thumbnail">
         <img src='.$img.' alt="thumbnail">
       </div>

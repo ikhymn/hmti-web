@@ -290,6 +290,10 @@ footer .copy-icon {
 
 
 @media screen and (max-width: 780px) {
+  header {
+    padding: 0 25px;
+  }
+
   header button.btn-menu {
     display: flex;
     visibility: visible;
@@ -320,10 +324,10 @@ footer .copy-icon {
   }
   
   header nav.menu li.dropdown ul.dropdown-menu.projects-menu {
-    position: static;
-    width: 100%;
-    transform: scaleY(1);
     opacity: 1;
+    width: 100%;
+    position: static;
+    transform: scaleY(1);
     box-shadow: #0000001e 0px 0px 12px inset;
     border-radius: 5px;
     list-style: none;
@@ -349,10 +353,10 @@ footer .copy-icon {
   footer .copyright {
     text-align: center;
     padding: 20px;
-    font-size: 12px;
+    font-size: 8px;
   }
 
   footer .copyright .copy-icon {
-    font-size: 12px;
+    font-size: 8px;
   }
 }

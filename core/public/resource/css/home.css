@@ -134,7 +134,7 @@ section.profil-singkat .content-title h2::before {
 
 section.profil-singkat .content p {
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -207,7 +207,7 @@ section.keterampilan .cards .card {
   padding: 20px 10px;
   border-radius: 12px;
   box-shadow: #0000001e 0 4px 12px, 
-            #0000001e 0 -2px 4px inset;
+              #0000001e 0 -2px 4px inset;
   transition: .3s;
 }
 
@@ -265,13 +265,21 @@ section.keterampilan .card:hover {
 }
 
 @media screen and (max-width: 900px) {
+  section.profil-singkat {
+    display: block;
+  }
+
+  section.profil-singkat aside.content-img {
+    display: none;
+    visibility: hidden;
+  }
+
   section.keterampilan .cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 780px) {
-  header,
   section.container {
     padding-left: 30px;
     padding-right: 30px;
@@ -285,7 +293,11 @@ section.keterampilan .card:hover {
     align-items: center;
   }
 
-  
+  section.profil-singkat aside.content-img {
+    display: block;
+    visibility: visible;
+  }
+
   section.struktur-organisasi .content-body img {
     width: 90%;
   }
@@ -296,7 +308,21 @@ section.keterampilan .card:hover {
 }
 
 @media screen and (max-width: 480px) {
+  section .content .content-title {
+    text-align: center;
+  }
+
+  section .content .content-title h2 {
+    font-size: 21px;
+  }
+  section.profil-singkat .content.paragraph p {
+    /* text-align: left; */
+    font-size: 12px;
+  }
+
   section.keterampilan .cards {
-    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 }

@@ -46,8 +46,11 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
         <a href=<?=BASE_URL?>/berita class="<?= $activePage=='berita'? 'active' : '' ?> berita-menu">Berita</a>
       </li>
       <li class="menu-item dropdown wow fadeInRight" data-wow-delay=".4s">
-        <a class="projects-menu dropdown-trigger" href="<?=BASE_URL?>/projects"> Projects <i class="hf caret-down"></i> </a>
+        <a class="projects-menu dropdown-trigger" href="<?=BASE_URL?>/projects#"> Projects <i class="hf caret-down"></i> </a>
         <ul class="dropdown-menu projects-menu">
+          <li class="dropdown-item multimedia-project">
+            <a href=<?=BASE_URL?>/projects#multimedia>Multimedia</a>
+          </li>
           <li class="dropdown-item ai-project">
             <a href=<?=BASE_URL?>/projects#ai>Artificial Intelligence</a>
           </li>
@@ -61,16 +64,16 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
             <a href=<?=BASE_URL?>/projects#troubleshoot>Troubleshooting</a>
           </li>
           <li class="dropdown-item mobile-dev-project">
-            <a href=<?=BASE_URL?>/projects#mobile>Mobile App Development</a>
+            <a href=<?=BASE_URL?>/projects#mobiledev>Mobile App Development</a>
           </li>
           <li class="dropdown-item networking-project">
-            <a href=<?=BASE_URL?>/projects#keterampilan>Network Engineering</a>
+            <a href=<?=BASE_URL?>/projects#networking>Network Engineering</a>
           </li>
           <li class="dropdown-item web-dev-project">
-            <a href=<?=BASE_URL?>/projects#web>Web Development</a>
+            <a href=<?=BASE_URL?>/projects#webdev>Web Development</a>
           </li>
           <li class="dropdown-item game-dev-project">
-            <a href=<?=BASE_URL?>/projects#game>Game Development</a>
+            <a href=<?=BASE_URL?>/projects#gamedev>Game Development</a>
           </li>
         </ul>
       </li>
@@ -87,7 +90,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
 </header>
 <?=$body?>
 <!-- Footer -->
-<footer class="wow fadeInUp" data-wow-delay="0.3s">
+<footer class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
   <section class="about cards">
     <div class="profil card">
       <div class="logo">
@@ -171,7 +174,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
     </div>
   </section>
   <span class=copyright>
-    <span class=copy-icon>&copy;</span><span class=copy-text>2022 Himpunan Mahasiswa Teknik Informatika Universitas Khairun. All Right Reserved. Hak Cipta HMTI Unkhair.</span>
+    <span class=copy-icon>&copy;</span><span class=copy-text>2022 Himpunan Mahasiswa Teknik Informatika Universitas Khairun. All Right Reserved.</span>
   </span>
 </footer>
 
