@@ -46,7 +46,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
         <a href=<?=BASE_URL?>/berita class="<?= $activePage=='berita'? 'active' : '' ?> berita-menu">Berita</a>
       </li>
       <li class="menu-item dropdown wow fadeInRight" data-wow-delay=".4s">
-        <a class="projects-menu dropdown-trigger" href="<?=BASE_URL?>/projects#"> Projects <i class="hf caret-down"></i> </a>
+        <a class="<?= $activePage=='projects'? 'active' : '' ?> projects-menu dropdown-trigger" href="<?=BASE_URL?>/projects#"> Projects <i class="hf caret-down"></i> </a>
         <ul class="dropdown-menu projects-menu">
           <li class="dropdown-item multimedia-project">
             <a href=<?=BASE_URL?>/projects#multimedia>Multimedia</a>

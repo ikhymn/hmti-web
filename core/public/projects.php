@@ -14,8 +14,9 @@ $marchEvent = $kegiatanData['subtask'][1];
 $hmtiFun    = $kegiatanData['subtask'][2];
 $skillClass = $kegiatanData['subtask'][3];
 
-$title     = "Kegiatan";
-$CustomCSS = '<link rel=stylesheet href='.RESOURCE.'/css/projects.css >';
+$title      = "Kegiatan";
+$CustomCSS  = '<link rel=stylesheet href='.RESOURCE.'/css/projects.css >';
+$activePage = 'projects';
 $body      = " 
 <main class='projects' style='background-image: url(".RESOURCE."/img/march-event-img.jpg);'>
   <div class='overlay'>
