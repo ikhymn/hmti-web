@@ -156,7 +156,7 @@ $body       = '
               <span class=card-text>Network Engineering</span>
             </div>
           </div>
-          <div class="card iot-skill">
+          <div class="card multimedia-skill">
             <div class=card-img>
               <svg width="100" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M93.75 59.375H81.25V46.875H75V75H25V25H53.125V18.75H40.625V6.25H34.375V18.75H25C23.3429 18.7517 21.7542 19.4107 20.5824 20.5824C19.4107 21.7542 18.7517 23.3429 18.75 25V34.375H6.25V40.625H18.75V59.375H6.25V65.625H18.75V75C18.7517 76.6571 19.4107 78.2458 20.5824 79.4176C21.7542 80.5893 23.3429 81.2483 25 81.25H34.375V93.75H40.625V81.25H59.375V93.75H65.625V81.25H75C76.6568 81.2475 78.2451 80.5882 79.4167 79.4167C80.5882 78.2451 81.2475 76.6568 81.25 75V65.625H93.75V59.375Z" fill="#3F79E9"/>
@@ -165,7 +165,7 @@ $body       = '
               </svg>                                          
             </div>
             <div class=card-body>
-              <span class=card-text>Internet of Things</span>
+              <span class=card-text>Multimedia</span>
             </div>
           </div>
           <div class="card gamedev-skill">

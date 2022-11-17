@@ -360,3 +360,11 @@ footer .copy-icon {
     font-size: 8px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  header nav a,
+  header nav li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

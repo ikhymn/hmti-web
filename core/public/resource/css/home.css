@@ -308,6 +308,19 @@ section.keterampilan .card:hover {
 }
 
 @media screen and (max-width: 480px) {
+  section.home .content-text .welcome-text {
+    display: flex;
+    justify-content: center;
+  }
+  section.home .home-content .welcome-text h2 {
+    font-size: 21px;
+    width: 60%;
+  }
+  
+  section.home .home-content .welcome-text h1 {
+    font-size: 24px;
+  }
+  
   section .content .content-title {
     text-align: center;
   }

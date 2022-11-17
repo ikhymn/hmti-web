@@ -32,7 +32,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
   <!-- Header -->
 <header>
   <span class="logo wow bounceIn" data-wow-delay=".3s">
-    <img src=<?=RESOURCE?>/img/hmti_logo.png alt=hmti_logo>
+  <a href=<?=BASE_URL?>/ ><img src=<?=RESOURCE?>/img/hmti_logo.png alt=hmti_logo></a>
   </span>
   <nav class=menu>
     <ul class=menu-items>

@@ -9,19 +9,19 @@ $kegiatanData = $prgrz->getTasks(PROGREZ_TOKENPROJECT, $kegiatanFID, 'task_name,
 
 //var_dump($kegiatanData);die();
 
-$itExpo      = $kegiatanData['subtask'][0];
-$marchEvent  = $kegiatanData['subtask'][1];
-$hmtiFun     = $kegiatanData['subtask'][2];
-$skillClass  = $kegiatanData['subtask'][3];
+$itExpo     = $kegiatanData['subtask'][0];
+$marchEvent = $kegiatanData['subtask'][1];
+$hmtiFun    = $kegiatanData['subtask'][2];
+$skillClass = $kegiatanData['subtask'][3];
 
 $title     = "Kegiatan";
 $CustomCSS = '<link rel=stylesheet href='.RESOURCE.'/css/projects.css >';
 $body      = " 
 <main class='projects' style='background-image: url(".RESOURCE."/img/march-event-img.jpg);'>
-  <div class=overlay>
+  <div class='overlay'>
     <h1 class='project-title'>Projects</h1>
     <!-- Multimedia Projects -->
-    <section class='project multimedia wow fadeInUp' data-wow-delay='0.3s' data-wow-duration= id=multimedia>
+    <section class='project multimedia wow fadeInUp' data-wow-delay='0.3s' data-wow-duration='1s' id=multimedia>
       <div class='project-title'>
         <h2>Multimedia</h2>
         <p class='project-desc'>Multimedia refers to the computer-assisted integration of text, drawings, still and moving images(videos) graphics, audio, animation, and any other media in which any type of information can be expressed, stored, communicated, and processed digitally.</p>
@@ -75,64 +75,10 @@ $body      = "
       </div>
     </section>
     <!-- Artificial Intelligence Projects -->
-    <section class='project artificial-intelligence wow fadeInUp' data-wow-delay='0.3s' data-wow-duration= id=ai>
+    <section class='project artificial-intelligence wow fadeInUp' data-wow-delay='0.3s' data-wow-duration='1s' id=ai>
       <div class='project-title'>
         <h2>Artificial Intelligence</h2>
         <p class='project-desc'>AI which stands for artificial intelligence refers to systems or machines that mimic human intelligence to perform tasks and can iteratively improve themselves based on the information they collect.</p>
-      </div>
-      <div class='projects-list'>
-        <div class='project-item'>
-          <div class='project-image'>
-            <img src='".RESOURCE."/img/march-event-img.jpg' alt='' >
-          </div>
-          <div class='project-summary'>
-            <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
-            <button class='cta-btn'>Go See</button>
-          </div>
-        </div>
-        <div class='project-item'>
-          <div class='project-image'>
-            <img src='".RESOURCE."/img/march-event-img.jpg' alt='' >
-          </div>
-          <div class='project-summary'>
-            <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
-            <button class='cta-btn'>Go See</button>
-          </div>
-        </div>
-        <div class='project-item'>
-          <div class='project-image'>
-            <img src='".RESOURCE."/img/march-event-img.jpg' alt='' >
-          </div>
-          <div class='project-summary'>
-            <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
-            <button class='cta-btn'>Go See</button>
-          </div>
-        </div>
-        <div class='project-item'>
-          <div class='project-image'>
-            <img src='".RESOURCE."/img/march-event-img.jpg' alt='' >
-          </div>
-          <div class='project-summary'>
-            <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
-            <button class='cta-btn'>Go See</button>
-          </div>
-        </div>
-        <div class='project-item'>
-          <div class='project-image'>
-            <img src='".RESOURCE."/img/march-event-img.jpg' alt='' >
-          </div>
-          <div class='project-summary'>
-            <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
-            <button class='cta-btn'>Go See</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Internet of Things Projects -->
-    <section class='project internet-of-things wow fadeInUp' data-wow-delay='0.3s' data-wow-duration='1s' id=iot>
-      <div class='project-title'>
-        <h2>Internet of Things</h2>
-        <p class='project-desc'>The term IoT, or Internet of Things, refers to the collective network of connected devices and the technology that facilitates communication between devices and the cloud, as well as between the devices themselves.</p>
       </div>
       <div class='projects-list'>
         <div class='project-item'>
