@@ -155,6 +155,12 @@ section.struktur-organisasi .content-title h2::before {
   animation: textwriting1 2s steps(19) forwards;
 }
 
+section.struktur-organisasi .body-text img.struktur-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: #0000002b 0 8px 16px;
+}
+
 section.keterampilan {
   display: flex;
   flex-direction: column;

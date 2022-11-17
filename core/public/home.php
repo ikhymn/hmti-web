@@ -65,7 +65,9 @@ $body       = '
       </div>
       <div class="content-body">
         <div class="body-text">
-          '.$strukturData['description'].'
+          <a href="'.RESOURCE.'/img/BAGAN STRUKTUR HMTI PERIODE 2022 - 2023.png" download>
+            <img class="struktur-img" src="'.RESOURCE.'/img/BAGAN STRUKTUR HMTI PERIODE 2022 - 2023.png" alt="Struktur Organisasi HMTI 2022-2023">
+          </a>
         </div>
         <aside class="news"></aside>
       </div>
