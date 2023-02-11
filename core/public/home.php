@@ -17,18 +17,25 @@ if($homeData == 'not_found') {
 $profilData       = $homeData['subtask'][0];
 $strukturData     = $homeData['subtask'][1];
 $keterampilanData = $homeData['subtask'][2];
+$heroData         = $homeData['subtask'][3];
 
 $title      = 'Home';
 $CustomCSS  = '<link rel="stylesheet" href='.RESOURCE.'/css/home.css>';
 $activePage = 'home';
 
+$heroes = '';
+foreach($heroData['files'] as $i => $heroImg) {
+  if($i==0) {$heroes .= '<div class="slide content-slide active" data-rmn-motion="relax" data-image-src="'.$heroImg['link'].'"></div>';}
+  else {$heroes .= '<div class="slide content-slide" data-rmn-motion="relax" data-image-src="'.$heroImg['link'].'"></div>';}
+}
+
 $body       = ' 
   <section class=home>
     <div class=hero>
-      <div class=hero-background>
-        <img src='.RESOURCE.'/img/hero-image.jpg alt=hero-home loading=lazy>
-      </div>
       <div class=hero-overlay>
+        <div class="slides rmn-slider">
+          '.$heroes.'
+        </div>
         <div class=home-content>
           <div class=content-logo>
             <img src='.RESOURCE.'/img/hmti_logo.png alt=hmti_logo>

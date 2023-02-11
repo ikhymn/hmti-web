@@ -1,10 +1,10 @@
 <?php
 
 define('BASE_PATH','X:/www/hmti-web');
-if($_SERVER['SERVER_ADDR'] == "::1") {
-  define('BASE_URL', 'http://'.$_SERVER['SERVER_NAME'].'/hmti-web');
-} else {
+if($_SERVER['SERVER_NAME'] == "::1") {
   define('BASE_URL', 'http://'.$_SERVER['SERVER_ADDR'].'/hmti-web');
+} else {
+  define('BASE_URL', 'http://'.$_SERVER['SERVER_NAME'].'/hmti-web');
 }
 define('LIB_PATH', BASE_PATH.'/core/libs');
 define('RESOURCE', BASE_URL.'/core/public/resource');

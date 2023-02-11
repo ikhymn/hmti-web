@@ -47,3 +47,27 @@
 .blog-body .paragraphs p::first-letter {
   padding-left: 25px;
 }
+
+@media screen and (max-width: 780px) {
+  main#main {
+    padding: 100px 20px;
+  }
+
+  h4.datetime,
+  .blog-body .paragraphs p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  
+  .blog-body .paragraphs p:first-child::first-letter {
+    font-size: 14px;
+  }
+
+  .blog-body .paragraphs p::first-letter {
+    padding-left: 15px;
+  }
+
+  .blog-body .paragraphs img {
+    width: 100%;
+  }
+}

@@ -23,6 +23,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
 
   <link rel=stylesheet href=<?=RESOURCE?>/js/library/WOW/css/libs/animate.css>
   <link rel=stylesheet href=<?=RESOURCE?>/fonts/hmti-fonticons.css>
+  <link rel=stylesheet href=<?=RESOURCE?>/css/RMNSlider.css>
   <link rel=stylesheet href=<?=RESOURCE?>/css/main.css>
   <?php echo isset($CustomCSS) ? $CustomCSS : '' ?>
 
@@ -178,6 +179,7 @@ $poweredData = $prgrz->getSubTask(PROGREZ_TOKENPROJECT, $poweredFID, 'task_name,
   </span>
 </footer>
 
+<script src="<?=RESOURCE?>/js/library/RMNSlider.js"></script>
 <script src="<?=RESOURCE?>/js/library/WOW/dist/wow.min.js"></script>
 <script>
   // Enable WOW JS
