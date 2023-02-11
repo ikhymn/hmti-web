@@ -2,16 +2,16 @@
 
 use Core\ProgrezAPI;
 
-$homeFID = "decee4caf4e0e4-1f25-5ea64ee6f719995839984e0e";
+$homeFID = "70726f6772657a-20262125-5ea64ee6f64e0e8cccac1ccc";
 
 $prgrz      = new ProgrezAPI(PROGREZ_USERKEY);
-$homeData   = $prgrz->getTasks(PROGREZ_TOKENPROJECT, $homeFID, 'task_name,description');
+$homeData   = $prgrz->getTasks(PROGREZ_TOKENPROJECT, $homeFID, 'task_name,files,description');
 
 if($homeData == 'not_found') {
-  $body = " 
-    <h1>Something Wrong with Connection to Progrez.Cloud</h1>
+  echo " 
+    <p>Something Wrong with Connection to Progrez.Cloud</p>
   ";
-  //die();
+  die();
 }
 
 $profilData       = $homeData['subtask'][0];
@@ -65,8 +65,8 @@ $body       = '
       </div>
       <div class="content-body">
         <div class="body-text">
-          <a href="'.RESOURCE.'/img/BAGAN STRUKTUR HMTI PERIODE 2022 - 2023.png" download>
-            <img loading=lazy class="struktur-img" src="'.RESOURCE.'/img/BAGAN STRUKTUR HMTI PERIODE 2022 - 2023.png" alt="Struktur Organisasi HMTI 2022-2023">
+          <a href="'.$strukturData['files'][0]['link'].'" download>
+            <img loading=lazy class="struktur-img" src="'.$strukturData['files'][0]['link'].'" alt="Struktur Organisasi HMTI 2022-2023">
           </a>
         </div>
         <aside class="news"></aside>
